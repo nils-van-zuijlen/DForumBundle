@@ -30,7 +30,7 @@ class ForumController extends BaseController
      *
      * @Route("", name="discutea_forum_homepage")
      * 
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      * 
      */
     public function indexAction()
@@ -52,10 +52,10 @@ class ForumController extends BaseController
      * @Security("is_granted('ROLE_ADMIN')")
      * 
      * @param object $request Symfony\Component\HttpFoundation\Request
-     * @param objct $category Discutea\DForumBundle\Entity\Category
+     * @param object $category Discutea\DForumBundle\Entity\Category
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse redirecting moderator's dashboard
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      * 
      */
     public function newForumAction(Request $request, Category $category)
@@ -86,10 +86,10 @@ class ForumController extends BaseController
      * @Security("is_granted('ROLE_ADMIN')")
      * 
      * @param object $request Symfony\Component\HttpFoundation\Request
-     * @param objct $forum Discutea\DForumBundle\Entity\Forum
+     * @param object $forum Discutea\DForumBundle\Entity\Forum
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse redirecting moderator's dashboard
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      * 
      */
     public function editForumAction(Request $request, Forum $forum)
@@ -117,10 +117,10 @@ class ForumController extends BaseController
      * @Security("is_granted('ROLE_ADMIN')")
      * 
      * @param object $request Symfony\Component\HttpFoundation\Request
-     * @param objct $forum Discutea\DForumBundle\Entity\Forum
+     * @param object $forum Discutea\DForumBundle\Entity\Forum
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse moderator's dashboard
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      * 
      */
 
