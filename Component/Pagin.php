@@ -32,10 +32,10 @@ class Pagin
     private $queryName;
     
     /*
-     * @param objet $request Symfony\Component\HttpFoundation\RequestStack
-     * @param objet $knpPagignator Knp\Component\Pager\Paginator
-     * @param array paginationConfig Discutea config pagination
-     * @param array $queryName
+     * @param object $request Symfony\Component\HttpFoundation\RequestStack
+     * @param object $knpPagignator Knp\Component\Pager\Paginator
+     * @param array  paginationConfig Discutea config pagination
+     * @param array  $queryName
      */
     public function __construct(RequestStack $request, Paginator $knpPagignator, $paginationConfig, $queryName)
     {
@@ -46,11 +46,11 @@ class Pagin
     }
     /**
      * 
-     * @param string $name name for fetch configuration reference
-     * @param objet $collection Doctrine\ORM\PersistentCollection
+     * @param string  $name name for fetch configuration reference
+     * @param object  $collection Doctrine\ORM\PersistentCollection
      * 
-     * @return objet Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination
-     * @return objet $collection Doctrine\ORM\PersistentCollection
+     * @return object Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination
+     * @return object $collection Doctrine\ORM\PersistentCollection
      */
     public function pagignate($name, $collection) {
         if ( (array_key_exists($name, $this->config)) &&  ($this->config[$name]["enabled"] === true)) {
