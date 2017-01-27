@@ -29,11 +29,11 @@ class PostController extends BasePostController
      * @ParamConverter("topic")
      * @Security("is_granted('CanReadTopic', topic)")
      *
-     * @param objet $request Symfony\Component\HttpFoundation\Request
-     * @param objet $topic Discutea\DForumBundle\Entity\Topic
+     * @param object $request Symfony\Component\HttpFoundation\Request
+     * @param object $topic Discutea\DForumBundle\Entity\Topic
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse redirecting in last post
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      */
     public function postAction(Request $request, Topic $topic)
     {
@@ -72,7 +72,7 @@ class PostController extends BasePostController
      * @ParamConverter("post")
      * @Security("has_role('ROLE_MODERATOR') and is_granted('CanEditPost', post)")
      *
-     * @param objet $post Discutea\DForumBundle\Entity\Post
+     * @param object $post Discutea\DForumBundle\Entity\Post
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse
      */
@@ -104,11 +104,11 @@ class PostController extends BasePostController
      * @ParamConverter("post")
      * @Security("is_granted('CanEditPost', post)")
      * 
-     * @param objet $request Symfony\Component\HttpFoundation\Request
-     * @param objet $post Discutea\DForumBundle\Entity\Post
+     * @param object $request Symfony\Component\HttpFoundation\Request
+     * @param object $post Discutea\DForumBundle\Entity\Post
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      */
     public function editAction(Request $request, Post $post)
     {
