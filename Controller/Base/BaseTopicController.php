@@ -29,7 +29,7 @@ class BaseTopicController extends BaseController
     /**
      * Generate topic form or return Null if not authorised
      * 
-     * @param objet $forum  Discutea\DForumBundle\Entity\Forum
+     * @param object $forum  Discutea\DForumBundle\Entity\Forum
      * 
      * @return NULL|object Symfony\Component\Form\Form
      */
@@ -50,9 +50,9 @@ class BaseTopicController extends BaseController
      * Create a new post objet set content, topic and user
      * 
      * @param string $content post content
-     * @param objet $topic Discutea\DForumBundle\Entity\Topic
+     * @param object $topic Discutea\DForumBundle\Entity\Topic
      * 
-     * @return objet $topic Discutea\DForumBundle\Entity\Post
+     * @return object $topic Discutea\DForumBundle\Entity\Post
      */
     protected function createPost($content, Topic $topic) {
         $post = new post();
