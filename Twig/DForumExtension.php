@@ -23,7 +23,7 @@ class DForumExtension extends \Twig_Extension
      */
     private $router;
 
-    /*
+    /**
      * @var array configuration for pagination
      */
     private $config;
