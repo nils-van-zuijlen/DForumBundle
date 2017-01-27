@@ -32,7 +32,7 @@ class CategoryController extends BaseController
      * @param object $request Symfony\Component\HttpFoundation\Request
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse moderator's dashboard
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      * 
      */
     public function newCategoryAction(Request $request)
@@ -61,10 +61,10 @@ class CategoryController extends BaseController
      * 
      * 
      * @param object $request Symfony\Component\HttpFoundation\Request
-     * @param objct $category Discutea\DForumBundle\Entity\Category
+     * @param object $category Discutea\DForumBundle\Entity\Category
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse moderator's dashboard
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      * 
      */
     public function editCategoryAction(Request $request, Category $category)
@@ -91,10 +91,10 @@ class CategoryController extends BaseController
      * @Security("is_granted('ROLE_ADMIN')")
      * 
      * @param object $request Symfony\Component\HttpFoundation\Request
-     * @param objct $category Discutea\DForumBundle\Entity\Category
+     * @param object $category Discutea\DForumBundle\Entity\Category
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse moderator's dashboard
-     * @return objet Symfony\Component\HttpFoundation\Response
+     * @return object Symfony\Component\HttpFoundation\Response
      * 
      */
     public function removeCategoryAction(Request $request, Category $category)
