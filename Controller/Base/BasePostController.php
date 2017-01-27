@@ -31,8 +31,8 @@ class BasePostController extends BaseController
     /**
      * Generate post form or return Null if not authorised
      * 
-     * @param objet $request  Symfony\Component\HttpFoundation\Request
-     * @param objet $topic  Discutea\DForumBundle\Entity\Topic
+     * @param object $request  Symfony\Component\HttpFoundation\Request
+     * @param object $topic    Discutea\DForumBundle\Entity\Topic
      * 
      * @return NULL|object Symfony\Component\Form\Form
      */
@@ -60,7 +60,7 @@ class BasePostController extends BaseController
     /**
      * After post redirect in post
      * 
-     * @param objet $posts Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination Listing posts in pagination
+     * @param  object $posts Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination Listing posts in pagination
      * 
      * @return object Symfony\Component\HttpFoundation\RedirectResponse redirecting in last post
      */
@@ -84,9 +84,9 @@ class BasePostController extends BaseController
     /**
      * Check if last posts page for display form
      * 
-     * @param objet $posts Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination Listing posts in pagination
-     * @param objet $request Symfony\Component\HttpFoundation\Request
-     * @param object $form Symfony\Component\Form\Form
+     * @param object $posts   Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination Listing posts in pagination
+     * @param object $request Symfony\Component\HttpFoundation\Request
+     * @param object $form    Symfony\Component\Form\Form
      * 
      * @return NULL|object Symfony\Component\Form\FormView
      */
@@ -101,9 +101,9 @@ class BasePostController extends BaseController
     /**
      * Check if preview is clicked
      * 
-     * @param objet $request Symfony\Component\HttpFoundation\Request
-     * @param object $form Symfony\Component\Form\Form
-     * @param objet $post Discutea\DForumBundle\Entity\Post Listing posts in pagination
+     * @param object $request Symfony\Component\HttpFoundation\Request
+     * @param object $form    Symfony\Component\Form\Form
+     * @param object $post    Discutea\DForumBundle\Entity\Post Listing posts in pagination
      * 
      * @return false|object Discutea\DForumBundle\Entity\Post
      */
